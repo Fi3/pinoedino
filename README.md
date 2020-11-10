@@ -1,7 +1,8 @@
 # PinoEDino
 
-Payment engine prototype. Parse [transactions](link a doc interna) and update [user](link a doc
-interna).
+Payment engine POC. Parse [transactions](TODO) and update [user](TODO).
+
+nightly rust needed
 
 ## Doc
 
@@ -14,3 +15,7 @@ Build documentation with [...] or read it at [...]
 ## Try
 
 `cargo run -- testfile.csv > result.csv`
+
+### Assumption
+
+a lot :)
