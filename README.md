@@ -19,3 +19,7 @@ Build documentation with [...] or read it at [...]
 ### Assumption
 
 a lot :)
+
+### Comment
+
+Overflow has been added to Client for when the total amount is decreased by something external.
