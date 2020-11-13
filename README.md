@@ -1,12 +1,9 @@
 # PinoEDino
 
 Payment engine POC. Parse [transactions](TODO) and update [user](TODO).
+This is a test case for the [Merx](https://github.com/fi3/merx) API usability.
 
 nightly rust needed
-
-## Doc
-
-Build documentation with [...] or read it at [...]
 
 ## Test
 
@@ -16,10 +13,8 @@ Build documentation with [...] or read it at [...]
 
 `cargo run -- testfile.csv > result.csv`
 
-### Assumption
+## Todo
 
-a lot :)
-
-### Comment
-
-Overflow has been added to Client for when the total amount is decreased by something external.
+- [ ] Documentation
+- [ ] Add multi currency support
+- [ ] Improve test dataset
