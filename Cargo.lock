@@ -112,8 +112,7 @@ checksum = "0ee1c47aaa256ecabcaea351eae4a9b01ef39ed810004e298d2511ed284b1525"
 [[package]]
 name = "merx"
 version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97da2763627b902b06f41cb9513cc5bf1f630156c2a3506cf3166516f73161f8"
+source = "git+https://github.com/Fi3/merx/#fef9e31e1f82cd716985863cafcd9f849b5d9df3"
 
 [[package]]
 name = "pinoedino"

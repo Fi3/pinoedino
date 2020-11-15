@@ -7,7 +7,7 @@ struct Fixed(i128, i128, u128);
 
 impl Fixed {
     pub fn format(&self) -> String {
-        format!("{}.{}", (self.0.abs()), (self.1.abs() / 10))
+        format!("{}.{}", (self.0.abs()), (self.1.abs()))
     }
 }
 

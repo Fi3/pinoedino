@@ -10,14 +10,14 @@ struct InputRow_ {
     type_: String,
     client: u16,
     tx: u32,
-    amount: Option<f64>,
+    amount: Option<String>,
 }
 
 struct InputRow {
     type_: String,
     client: u16,
     tx: u32,
-    amount: Option<f64>,
+    amount: Option<String>,
     linked_amount: Option<Usd>,
 }
 
@@ -132,7 +132,7 @@ impl TryFrom<InputRow> for crate::engine::Transaction {
                     Err(())
                 }
                 Some(amount) => {
-                    let usd = Usd::try_from(amount * -1.0);
+                    let usd = Usd::try_from(&format!("{}{}", "-", amount)[..]);
                     match usd {
                         Err(_) => {
                             eprintln!("WARNING: ingored row invalid amount: {}", amount);
@@ -157,7 +157,7 @@ impl TryFrom<InputRow> for crate::engine::Transaction {
                     Err(())
                 }
                 Some(amount) => {
-                    let usd = Usd::try_from(amount);
+                    let usd = Usd::try_from(&amount[..]);
                     match usd {
                         Err(_) => {
                             eprintln!("WARNING: ingored row invalid amount: {}", amount);

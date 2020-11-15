@@ -13,7 +13,7 @@ get_traits!();
 
 // Create a new asset called usd with 5 decimal digits precision and a maximum value of
 // 90_000_000_000_000
-new_asset!(usd, 5, 90_000_000_000_000);
+new_asset!(usd, 4, 14_000_000_000_000);
 
 pub type Usd = Asset<usd::Value>;
 /// Values < 0
